@@ -166,7 +166,11 @@ p {
 .weather-app-1-img,
 .weather-app-2-img,
 .weather-app-3-img {
+  margin: 0 auto;
   margin: 100px auto;
+}
+.yogurt-app-img {
+  margin-left: 50px;
 }
 .yogurt-title,
 .weather-app-1-title,
