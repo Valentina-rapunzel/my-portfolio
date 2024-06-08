@@ -162,7 +162,7 @@ p {
   color: var(--pink-lighter-color);
   font-size: var(--h1-size);
   font-weight: 600;
-  margin: 40px auto;
+  margin-top: 150px;
 }
 .yogurt-app-img,
 .weather-app-1-img,
