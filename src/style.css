@@ -224,22 +224,31 @@ p {
 .link-section {
   display: flex;
   flex-direction: column;
-  text-align: left;
-  margin-left: 400px;
+  text-align: center;
+  
 }
 .email,
 .phone,
-.instagram {
+.instagram,
+.github,
+.behance,
+.facebook,
+.linkedin,
+.youtube {
   color: var(--accent-color-pink);
   font-size: var(--h4-size);
   text-decoration: none;
 }
 .email:hover,
 .phone:hover,
-.instagram:hover {
+.instagram:hover,
+.github:hover,
+.behance:hover,
+.facebook:hover,
+.linkedin:hover,
+.youtube:hover {
   color: var(--accent-color);
 }
 .icon {
   margin-top: 15px;
-  background-color: var(--accent-color-pink);
 }
