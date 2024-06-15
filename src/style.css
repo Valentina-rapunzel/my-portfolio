@@ -28,7 +28,7 @@ body {
   height: 100%;
 }
 .portfolio-container {
-  margin: 30px 120px 60px 120px;
+  margin: 0px 120px 60px 120px;
 }
 .img-logo {
   width: 150px;
@@ -128,7 +128,7 @@ p {
   color: var(--pink-lighter-color);
   font-size: var(--h1-size);
   font-weight: 600;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 .from-ukraine {
   color: var(--secondary-color);
@@ -162,7 +162,7 @@ p {
   color: var(--pink-lighter-color);
   font-size: var(--h1-size);
   font-weight: 600;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .yogurt-app-img,
 .weather-app-1-img,
@@ -219,13 +219,12 @@ p {
   color: var(--pink-lighter-color);
   font-size: var(--h1-size);
   font-weight: 600;
-  margin: 20px auto;
+  margin: 100px auto;
 }
 .link-section {
   display: flex;
   flex-direction: column;
   text-align: center;
-  
 }
 .email,
 .phone,
@@ -235,9 +234,10 @@ p {
 .facebook,
 .linkedin,
 .youtube {
-  color: var(--accent-color-pink);
+  color: var(--accent-color);
   font-size: var(--h4-size);
   text-decoration: none;
+  
 }
 .email:hover,
 .phone:hover,
@@ -251,4 +251,9 @@ p {
 }
 .icon {
   margin-top: 15px;
+}
+.email-row,
+.phone-row,
+.link-row{
+  margin: 50px auto;
 }
