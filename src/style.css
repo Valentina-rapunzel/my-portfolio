@@ -116,6 +116,7 @@ p {
   text-align: center;
 }
 .go-to-homepage-link {
+  font-size: var(--link-size);
   color: var(--gray-light);
   font-weight: 400;
 }
@@ -155,24 +156,29 @@ p {
 .text {
   color: var(--pale-white);
   font-size: var(--p-size);
-  margin: 50px 0px 100px 20px;
+  padding-left: 20px;
+  padding-top: 40px;
 }
 .my-projects-title {
   text-decoration: underline;
   color: var(--pink-lighter-color);
   font-size: var(--h1-size);
   font-weight: 600;
-  margin-top: 100px;
+  margin-bottom: 0px;
+  margin: 50px auto;
 }
 .yogurt-app-img,
 .weather-app-1-img,
 .weather-app-2-img,
 .weather-app-3-img {
+  display: block;
   margin: 0 auto;
-  margin: 100px auto;
+  margin-top: 100px;
 }
 .yogurt-app-img {
-  margin-left: 50px;
+  padding: 20px;
+  display: block;
+  margin: 0 auto;
 }
 .yogurt-title,
 .weather-app-1-title,
@@ -185,8 +191,13 @@ p {
 .weather-app-1-text,
 .weather-app-2-text,
 .weather-app-3-text {
-  margin: 60px 30px;
+  padding: 80px 30px;
+  margin-bottom: 0px;
   font-size: var(--h4-size);
+}
+.yogurt-text {
+  margin-top: 60px;
+  margin-bottom: 0px;
 }
 .launch-link {
   text-decoration: none;
@@ -195,7 +206,7 @@ p {
 .launch-weather-app-1,
 .launch-weather-app-2,
 .launch-weather-app-3 {
-  margin: 100px auto;
+  margin: 0px auto;
   padding: 30px 50px;
   color: #000000;
   font-size: var(--h5-size);
@@ -219,15 +230,15 @@ p {
   color: var(--pink-lighter-color);
   font-size: var(--h1-size);
   font-weight: 600;
-  margin: 100px auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
 .link-section {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.email,
-.phone,
+
 .instagram,
 .github,
 .behance,
@@ -237,23 +248,31 @@ p {
   color: var(--accent-color);
   font-size: var(--h4-size);
   text-decoration: none;
-  
 }
-.email:hover,
-.phone:hover,
-.instagram:hover,
-.github:hover,
-.behance:hover,
-.facebook:hover,
-.linkedin:hover,
-.youtube:hover {
+.email,
+.phone {
   color: var(--accent-color);
+  font-size: var(--h3-size);
+  text-decoration: none;
+}
+
+.email:hover,
+.phone:hover {
+  color: var(--primary-color);
 }
 .icon {
   margin-top: 15px;
 }
 .email-row,
 .phone-row,
-.link-row{
+.link-row {
   margin: 50px auto;
+}
+.phone-icon,
+.email-icon {
+  padding-bottom: 20px;
+  opacity: 0.5;
+}
+.rights{
+  margin-top: 50px;
 }
