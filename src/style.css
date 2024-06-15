@@ -17,7 +17,7 @@
   --h4-size: 50px;
   --h5-size: 40px;
   --p-size: 40px;
-  --link-size: 20px;
+  --link-size: 16px;
   --p-size-2: 20px;
   --satoshi: "Satoshi", sans-serif;
 }
@@ -43,6 +43,7 @@ header {
   margin-bottom: 0px;
 }
 .valentina-rapunzel {
+  color: var(--primary-color);
   font-size: var(--h1-size);
   margin: 20px auto;
 }
@@ -57,7 +58,7 @@ header {
   justify-content: center;
 }
 .button {
-  margin: 10px 20px;
+  margin: 20px auto;
   color: #000000;
   font-weight: 700;
   background-color: var(--pale-white);
@@ -68,13 +69,13 @@ header {
   font-weight: 900;
 }
 .about-me-button {
-  padding: 30px 50px;
+  padding: 30px 30px;
 }
 .my-projects-button {
-  padding: 30px 50px;
+  padding: 20px 30px;
 }
 .contact-me-button {
-  padding: 30px 40px;
+  padding: 20px 30px;
 }
 .about-me-link,
 .my-projects-link,
@@ -82,7 +83,6 @@ header {
   font-family: "Satoshi", sans-serif;
   text-decoration: none;
   font-size: var(--link-size);
-  font-weight: 500;
 }
 
 footer {
@@ -273,6 +273,17 @@ p {
   padding-bottom: 20px;
   opacity: 0.5;
 }
-.rights{
+.rights {
   margin-top: 50px;
+}
+@media (max-width: 900px) {
+  .greeting {
+    font-size: 50px;
+  }
+  .valentina-rapunzel {
+    font-size: 64px;
+  }
+  .graphic-designer {
+    font-size: 28px;
+  }
 }
