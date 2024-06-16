@@ -1,4 +1,5 @@
 :root {
+  --animation: color-change 5s ease infinite;
   --primary-color: #fff;
   --background-color: #000000;
   --gray-light: #cdcdcd;
@@ -13,23 +14,45 @@
   --border: 2px solid white;
   --h1-size: 90px;
   --h2-size: 70px;
-  --h3-size: 55px;
+  --h3-size: 48px;
   --h4-size: 50px;
   --h5-size: 40px;
   --p-size: 40px;
   --link-size: 16px;
-  --p-size-2: 20px;
+  --footer-link: 14px;
+  --p-size-2: 12px;
   --satoshi: "Satoshi", sans-serif;
 }
+
+/* Define the animation */
+@keyframes color-change {
+  10% {
+    color: #fff;
+  } /* Start color */
+  50% {
+    color: #edb1f1;
+  } /* Middle color */
+  75% {
+    color: #d59bf6;
+  } /* Middle-2 color */
+  85% {
+    color: #8ef6e4;
+  } /* Middle-3 color */
+  95% {
+    color: #d620e3;
+  } /* Middle-4 color */
+  100% {
+    color: #edb1f1;
+  } /* End color */
+}
+/* ANIMATION  */
 
 body {
   font-family: var(--satoshi);
   width: 100%;
   height: 100%;
 }
-.portfolio-container {
-  margin: 0px 120px 60px 120px;
-}
+
 .img-logo {
   width: 150px;
 }
@@ -43,15 +66,17 @@ header {
   margin-bottom: 0px;
 }
 .valentina-rapunzel {
-  color: var(--primary-color);
+  animation: var(--animation);
   font-size: var(--h1-size);
-  margin: 20px auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .graphic-designer {
   font-size: var(--h3-size);
   color: var(--pink-darker-color);
-  margin: 20px auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .main-buttons {
   display: flex;
@@ -59,11 +84,12 @@ header {
 }
 .button {
   margin: 20px 5px;
+
   padding: 20px 30px;
   color: var(--primary-color);
   font-weight: 700;
   background-color: var(--background-color);
-  border-radius: 20px;
+  border-radius: 50px;
 }
 .button:hover {
   background-color: var(--accent-color-pink);
@@ -82,16 +108,16 @@ header {
 }
 
 footer {
-  margin: 40px auto;
+  margin: 20px auto;
   text-align: center;
 }
-p {
+.footer-paragraph {
   font-size: var(--p-size-2);
   color: var(--gray-light);
 }
 .footer-links {
   color: var(--secondary-color);
-  font-size: var(--link-size);
+  font-size: var(--footer-link);
 }
 
 /* ABOUT ME  */
@@ -104,12 +130,13 @@ p {
 /* ABOUT ME  */
 /* ABOUT ME  */
 /* ABOUT ME  */
-.about-me-container {
-  margin-top: 60px;
-}
+/* .about-me-container {
+  margin: 0px 120px 60px 120px;
+} */
 
 .go-to-homepage-section {
   text-align: center;
+  margin-bottom: 0px;
 }
 .go-to-homepage-link {
   font-size: var(--link-size);
@@ -123,19 +150,17 @@ p {
 .about-me-title {
   text-decoration: underline;
   color: var(--pink-lighter-color);
-  font-size: var(--h1-size);
+  font-size: var(--h2-size);
   font-weight: 600;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 .from-ukraine {
+  margin-bottom: 0px;
   color: var(--secondary-color);
-  margin-top: 50px;
   font-weight: 600;
   font-size: var(--h3-size);
 }
-.about-me-container {
-  margin: 40px 60px;
-}
+
 .avatar {
   max-width: fit-content;
   margin-top: 60px;
@@ -158,10 +183,14 @@ p {
 .my-projects-title {
   text-decoration: underline;
   color: var(--pink-lighter-color);
-  font-size: var(--h1-size);
+  font-size: var(--h2-size);
   font-weight: 600;
   margin-bottom: 0px;
   margin: 50px auto;
+}
+p {
+  font-size: var(--p-size-2);
+  color: var(--gray-light);
 }
 .yogurt-app-img,
 .weather-app-1-img,
@@ -183,7 +212,7 @@ p {
   color: var(--accent-color-pink);
   font-size: var(--h3-size);
 }
-.yogurt-text,
+
 .weather-app-1-text,
 .weather-app-2-text,
 .weather-app-3-text {
@@ -192,7 +221,9 @@ p {
   font-size: var(--h4-size);
 }
 .yogurt-text {
-  margin-top: 60px;
+  font-size: var(--h4-size);
+  padding: 40px 30px;
+  margin-top: 20px;
   margin-bottom: 0px;
 }
 .launch-link {
@@ -224,7 +255,7 @@ p {
 .contact-me-title {
   text-decoration: underline;
   color: var(--pink-lighter-color);
-  font-size: var(--h1-size);
+  font-size: var(--h2-size);
   font-weight: 600;
   margin-top: 150px;
   margin-bottom: 50px;
@@ -272,14 +303,68 @@ p {
 .rights {
   margin-top: 50px;
 }
+
 @media (max-width: 900px) {
   .greeting {
     font-size: 50px;
   }
   .valentina-rapunzel {
-    font-size: 64px;
+    font-size: 74px;
   }
   .graphic-designer {
     font-size: 28px;
+  }
+  /* About me page  */
+  .from-ukraine {
+    font-size: 36px;
+  }
+  .avatar {
+    margin: 30px auto;
+  }
+  .text {
+    font-size: 24px;
+  }
+  .yogurt-title,
+  .weather-app-1-title,
+  .weather-app-2-title,
+  .weather-app-3-title {
+    font-size: 36px;
+  }
+  .yogurt-text,
+  .weather-app-1-text,
+  .weather-app-2-text,
+  .weather-app-3-text {
+    font-size: 24px;
+  }
+  .launch-yogurt,
+  .launch-weather-app-1,
+  .launch-weather-app-2,
+  .launch-weather-app-3 {
+    font-size: 18px;
+    padding: 20px 30px;
+  }
+  .contact-me-title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .email-row,
+  .phone-row,
+  .link-row {
+    margin: 0px auto;
+  }
+  a.phone,
+  a.email {
+    font-size: 22px;
+  }
+  .icon {
+    width: 30px;
+  }
+  .phone-icon,
+  .email-icon {
+    width: 30px;
+  }
+  .rights {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
