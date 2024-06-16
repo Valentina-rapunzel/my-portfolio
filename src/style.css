@@ -293,7 +293,7 @@ p {
 .email-row,
 .phone-row,
 .link-row {
-  margin: 50px auto;
+  margin: 40px auto;
 }
 .phone-icon,
 .email-icon {
@@ -301,7 +301,7 @@ p {
   opacity: 0.5;
 }
 .rights {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 @media (max-width: 900px) {
@@ -361,10 +361,9 @@ p {
   }
   .phone-icon,
   .email-icon {
-    width: 30px;
+    width: 20px;
   }
-  .rights {
-    margin-top: 30px;
-    margin-bottom: 20px;
+  .rights{
+    margin-top: 20px;
   }
 }
