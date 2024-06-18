@@ -272,20 +272,30 @@ p {
 .facebook,
 .linkedin,
 .youtube {
-  color: var(--accent-color);
+  color: var(--primary-color);
+  opacity: 0.5;
   font-size: var(--h4-size);
   text-decoration: none;
 }
+.instagram:hover,
+.github:hover,
+.behance:hover,
+.facebook:hover,
+.linkedin:hover,
+.youtube:hover {
+  color: var(--accent-color);
+  opacity: 1;
+}
 .email,
 .phone {
-  color: var(--accent-color);
+  color: var(--primary-color);
   font-size: var(--h3-size);
   text-decoration: none;
 }
 
 .email:hover,
 .phone:hover {
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 .icon {
   margin-top: 15px;
