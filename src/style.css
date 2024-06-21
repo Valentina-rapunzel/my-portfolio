@@ -363,14 +363,14 @@ p {
   .email-row,
   .phone-row,
   .link-row {
-    margin: 0px auto;
+    margin: 0 auto;
   }
   a.phone,
   a.email {
     font-size: 22px;
   }
   .icon {
-    width: 30px;
+    width: 20px;
   }
   .phone-icon,
   .email-icon {
