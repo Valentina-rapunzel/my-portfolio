@@ -369,12 +369,13 @@ p {
   a.email {
     font-size: 22px;
   }
+ 
   .icon {
-    width: 18px;
+    font-size: 30px;
   }
   .phone-icon,
   .email-icon {
-    width: 20px;
+    font-size: 20px;
   }
   .rights {
     margin-top: 20px;
