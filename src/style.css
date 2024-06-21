@@ -316,13 +316,13 @@ p {
 
 @media (max-width: 900px) {
   .img-logo {
-  width: 100px;
-}
+    width: 100px;
+  }
   .greeting {
     font-size: 50px;
   }
   .valentina-rapunzel {
-    font-size: 74px;
+    font-size: 68px;
   }
   .graphic-designer {
     font-size: 28px;
@@ -376,7 +376,7 @@ p {
   .email-icon {
     width: 20px;
   }
-  .rights{
+  .rights {
     margin-top: 20px;
   }
 }
