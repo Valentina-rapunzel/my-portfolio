@@ -54,7 +54,7 @@ body {
 }
 
 .img-logo {
-  width: 150px;
+  max-width: 150px;
 }
 header {
   text-align: center;
@@ -315,6 +315,9 @@ p {
 }
 
 @media (max-width: 900px) {
+  .img-logo {
+  max-width: 50px;
+}
   .greeting {
     font-size: 50px;
   }
